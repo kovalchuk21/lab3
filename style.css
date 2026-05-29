@@ -1,0 +1,163 @@
+/* Імпорт шрифтів з Google Fonts — варіант 7 */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Muli:wght@400;600&display=swap');
+
+/* =============================================
+   БАЗОВІ СТИЛІ
+   ============================================= */
+body {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* =============================================
+   ЗАГОЛОВКИ — варіант 7: Space Mono, колір #1E40AF
+   ============================================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', monospace;
+  color: #1E40AF;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* =============================================
+   СЕКЦІЯ 1 — subtitle для <p> (пункт 9)
+   ============================================= */
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Muli', sans-serif;
+}
+
+/* =============================================
+   ГОРИЗОНТАЛЬНЕ МЕНЮ (пункт 5 та 6)
+   ============================================= */
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style-type: none; /* прибираємо маркери (пункт 10) */
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 24px;
+  background-color: #EFF6FF;
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: 1px solid #BFDBFE;
+}
+
+nav ul li a {
+  font-family: 'Space Mono', monospace;
+  text-decoration: none; /* прибираємо підкреслення (пункт 5) */
+  color: #1E40AF;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #3B82F6;
+}
+
+/* =============================================
+   ТАБЛИЦЯ — "зебра" варіант 7: #EFF6FF / #1E40AF
+   border collapse + колір меж (пункти 7 та 8)
+   ============================================= */
+table {
+  width: 100%;
+  border-collapse: collapse; /* пункт 8 */
+  margin-top: 1rem;
+  font-family: 'Muli', sans-serif;
+}
+
+table th {
+  font-family: 'Space Mono', monospace;
+  background-color: #1E40AF;
+  color: #ffffff;
+  padding: 10px 12px;
+  text-align: left;
+  border: 1px solid #1E40AF; /* колір меж аналогічний заголовку */
+}
+
+/* Парні рядки — колір фону зебри */
+table tr:nth-child(even) {
+  background-color: #EFF6FF;
+}
+
+/* Непарні рядки */
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table td {
+  padding: 9px 12px;
+  border: 1px solid #1E40AF; /* колір меж аналогічний заголовкам (пункт 8) */
+}
+
+/* Colspan-рядки (підзаголовки циклів) */
+table td[colspan] {
+  background-color: #DBEAFE;
+  font-family: 'Space Mono', monospace;
+  color: #1E40AF;
+  font-weight: 700;
+  border: 1px solid #1E40AF;
+}
+
+
+ul, ol {
+  list-style-type: none;
+  padding-left: 1.2rem;
+}
+
+ul li::before {
+  content: "—";
+  margin-right: 8px;
+  color: #1E40AF;
+  font-family: 'Space Mono', monospace;
+}
+
+ol {
+  counter-reset: none;
+}
+
+ol li::before {
+  content: none;
+}
+
+/* =============================================
+   СТРУКТУРНО-ЛОГІЧНА СХЕМА (пункт 2)
+   ============================================= */
+#structural-schema {
+  margin-top: 2rem;
+}
+
+#structural-schema img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 1px solid #BFDBFE;
+  border-radius: 6px;
+}
